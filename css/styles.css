@@ -582,31 +582,14 @@ pre code {
 
 /*----hover over image in first page ------------------------------------------*/
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  /* opacity: 0; */
-  transition: .5s ease;
-  /* background-color: #008CBA; */
-}
-
-.row:hover .overlay {
-  opacity: 1;
-}
-
-.row img {
+.overlay img {
   transition: -webkit-clip-path 0.25s ease-out;
   transition: clip-path 0.25s ease-out;
   transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
   -webkit-clip-path: inset(-1px);
   clip-path: inset(-1px);
 }
-.row:hover img {
+.overlay:hover img {
   -webkit-clip-path: inset(2rem);
   clip-path: inset(2rem);
 }
